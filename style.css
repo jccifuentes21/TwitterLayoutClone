@@ -1,0 +1,270 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  background-color: #15202B;
+  height: 100vh;
+
+}
+
+.left-sidebar, .nav-bar{
+  display: flex;
+  flex-direction: column;
+}
+
+.left-sidebar{
+  position: fixed;
+  width: 18vw;
+  height: 100vh;
+  display: flex;
+  left: 18vmin;
+  overflow: hidden;
+  border-right: solid 1px #f7f9f91a;
+}
+
+.twitter-icon{
+  height: 2rem;
+  fill: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 1rem 0;
+  padding: 0 1.2rem;
+  align-self: flex-start;
+}
+
+.nav-bar{
+  gap: .2rem;
+}
+
+.nav-btn{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: .75rem;
+  width: fit-content;
+  color: #ffffff;
+  transition: 100ms;
+  border-radius: 2em;
+  font-size: 20px;
+  gap: 1rem;
+}
+
+.nav-btn:hover{
+  background-color: #f7f9f91a;
+  transition: 100ms;
+
+}
+
+.nav-btn.active{
+  font-weight: bold;
+}
+
+
+.nav-icon{
+  fill: #ffffff;
+  width: 3rem;
+  padding: 0 0.5rem;
+}
+
+.messages{
+  position: absolute;
+  right: 1rem;
+  bottom: 0px;
+}
+
+.nav-btn{
+  text-transform: capitalize;
+}
+
+.tweet-btn{
+  display: flex;
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+  align-items: center;
+  text-transform: capitalize;
+  width: 90%;
+  justify-content: center;
+  padding: .75rem;
+  background-color: #1A8CD9;
+  border-radius: 2rem;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  transition: 100ms;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.profile:hover{
+  background-color: #f7f9f91a;
+  transition: 100ms;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.user-image{
+  border-radius: 99em;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.user-name{
+  font-weight: bold;
+}
+
+.username{
+  color: rgb(128,141,154);
+}
+
+.more-dots{
+  margin-left: 2rem;
+}
+
+.content{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 57vmin;
+  width: 38vw; 
+  height: 100vh;
+}
+
+.home{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 3rem;
+  color: #fff;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #15202bbf;
+
+}
+
+.stars-icon{
+  fill: rgb(239, 243, 244);
+  width: 1.2rem;
+}
+
+.tweet-box{
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.tweet-box-img{
+  border-radius: 99em;
+  height: 48px;
+}
+
+.tweet-box-input{
+  margin-left: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  outline: none;
+  height: 4rem;
+  font-size: larger;
+  width: 100%;
+  border-bottom: 1px solid #f7f9f91a;
+  
+}
+
+
+
+/* RIGHT SIDEBAR CSS */
+.right-sidebar{
+  height: 100vh;
+  width: 22vw;
+  position: fixed;
+  right: 28vmin;
+  border-left: solid 1px #f7f9f91a;
+}
+
+.search-bar{
+  background-color: #273340;
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar:focus-within{
+  border: solid 1px #1A8CD9;
+}
+
+.search-icon{
+  fill: #8794A1;
+  height: 1.2rem;
+  margin: 0 1.5rem;
+}
+
+.searchbar-input{
+  border: none;
+  color: #8794A1;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.searchbar-input:focus{
+  outline: none;
+}
+
+.whats-happening{
+  width: 100%;
+  background-color: #1E2732;
+  border-radius: 1em;
+  margin: 1rem 2rem;
+}
+
+.WH-article{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: .25rem 1rem;
+}
+.WH-article:last-child{
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.WH-article:hover{
+  background-color: #f7f9f91a;
+}
+
+.dots{
+  fill: rgb(139, 152, 165);
+  height: 1.25em;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.sub-article{
+  display: flex;
+  justify-content: space-between;
+  color: #8794A1;
+  margin: .5rem 0;
+  font-size: small;
+}
