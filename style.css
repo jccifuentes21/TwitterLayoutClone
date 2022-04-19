@@ -69,12 +69,6 @@ body{
   padding: 0 0.5rem;
 }
 
-.messages{
-  position: absolute;
-  right: 1rem;
-  bottom: 0px;
-}
-
 .nav-btn{
   text-transform: capitalize;
 }
@@ -390,6 +384,7 @@ body{
 
 .user-suggestion{
   display: flex;
+  align-items: center;
 }
 
 .follow-button{
